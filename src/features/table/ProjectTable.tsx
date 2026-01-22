@@ -73,8 +73,9 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ projects, loading, onRowCli
         },
     ], []);
 
+
     return (
-        <div className="h-full w-full bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+        <div className="h-full w-full bg-white md:rounded-xl md:shadow-sm md:border md:border-slate-200 overflow-hidden flex flex-col">
             <DataGrid
                 rows={projects}
                 columns={columns}
@@ -96,27 +97,36 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ projects, loading, onRowCli
                 slots={{ toolbar: GridToolbar }}
                 sx={{
                     border: 'none',
+                    fontFamily: 'Inter, sans-serif',
                     '& .MuiDataGrid-row': {
                         cursor: 'pointer',
+                        transition: 'background-color 0.2s',
                         '&:hover': {
-                            backgroundColor: '#f1f5f9', // Slate-100
+                            backgroundColor: '#f8fafc', // Slate-50
                         },
                         '&.Mui-selected': {
-                            backgroundColor: '#e0f2fe', // Sky-100
+                            backgroundColor: '#eff6ff', // Blue-50
                             '&:hover': {
-                                backgroundColor: '#bae6fd', // Sky-200
+                                backgroundColor: '#dbeafe', // Blue-100
                             }
                         }
                     },
+                    '& .MuiDataGrid-cell': {
+                        borderBottom: '1px solid #f1f5f9',
+                    },
                     '& .MuiDataGrid-cell:focus': { outline: 'none' },
                     '& .MuiDataGrid-columnHeaders': {
-                        backgroundColor: '#f8fafc', // Slate-50
-                        borderBottom: '1px solid #e2e8f0',
-                        color: '#475569',
+                        backgroundColor: '#ffffff',
+                        borderBottom: '2px solid #e2e8f0',
+                        color: '#64748b',
                         fontWeight: 600,
+                        textTransform: 'uppercase',
+                        fontSize: '0.75rem',
+                        letterSpacing: '0.05em',
                     },
                     '& .MuiDataGrid-footerContainer': {
-                        borderTop: '1px solid #e2e8f0',
+                        borderTop: '1px solid #f1f5f9',
+                        backgroundColor: '#ffffff',
                     }
                 }}
             />
