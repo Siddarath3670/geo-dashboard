@@ -65,13 +65,9 @@ const MapComponent: React.FC<MapComponentProps> = ({ projects, selectedId, onMar
                             click: () => onMarkerClick(project.id),
                         }}
                     >
-                        <Popup className="custom-popup">
-                            <div className="p-1">
-                                <h3 className="font-semibold text-slate-800 text-sm mb-1">{project.projectName}</h3>
-                                <div className="text-xs text-slate-500">
-                                    <span className="font-medium text-slate-600">Status:</span> {project.status}
-                                </div>
-                            </div>
+                        <Popup>
+                            <strong>{project.projectName}</strong><br />
+                            Status: {project.status}
                         </Popup>
                     </Marker>
                 ))}
