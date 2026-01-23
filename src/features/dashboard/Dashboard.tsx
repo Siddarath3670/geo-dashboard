@@ -40,7 +40,7 @@ const Dashboard: React.FC = () => {
             {/* Header */}
             <header className="px-6 py-4 bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 flex items-center justify-between shadow-sm">
                 <div>
-                    <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                    <h1 className="text-2xl font-bold bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                         Geo Dashboard
                     </h1>
                     <p className="text-xs text-slate-500 font-medium mt-0.5">

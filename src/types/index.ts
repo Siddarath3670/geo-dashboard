@@ -1,4 +1,4 @@
-export type ProjectStatus = 'Active' | 'Pending' | 'Completed' | 'On Hold';
+export type ProjectStatus = 'Active' | 'Pending' | 'Completed' | 'On Hold'; //project status types
 
 export interface Project {
     id: string;
@@ -6,7 +6,7 @@ export interface Project {
     latitude: number;
     longitude: number;
     status: ProjectStatus;
-    lastUpdated: string; // ISO Date string
+    lastUpdated: string; //date in ISO format
 }
 
 export interface PaginatedResponse<T> {

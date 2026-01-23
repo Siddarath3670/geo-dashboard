@@ -6,6 +6,7 @@ import {
     type GridPaginationModel,
     type GridRowSelectionModel,
     GridToolbar
+
 } from '@mui/x-data-grid';
 import { type Project } from '../../types';
 import { Chip } from '@mui/material';
@@ -102,12 +103,12 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ projects, loading, onRowCli
                         cursor: 'pointer',
                         transition: 'background-color 0.2s',
                         '&:hover': {
-                            backgroundColor: '#f8fafc', // Slate-50
+                            backgroundColor: '#f8fafc', 
                         },
                         '&.Mui-selected': {
-                            backgroundColor: '#eff6ff', // Blue-50
+                            backgroundColor: '#eff6ff', 
                             '&:hover': {
-                                backgroundColor: '#dbeafe', // Blue-100
+                                backgroundColor: '#dbeafe',
                             }
                         }
                     },
