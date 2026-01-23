@@ -79,6 +79,10 @@ const Dashboard: React.FC = () => {
                     </div>
                 </div>
             </main>
+            {/* Footer */}
+            <div className="px-6 py-3 bg-white/80 backdrop-blur-md border-t border-slate-200 text-center text-slate-500 text-sm">
+                &copy; 2026 Geo Dashboard. All rights reserved to Dotaizz.
+            </div>
         </div>
     );
 };
