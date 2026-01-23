@@ -2,6 +2,9 @@
 
 A modern, responsive dashboard application for visualizing geospatial data using React, Leaflet, and Material UI.
 
+## Deplyed Link
+- **link**: https://geo-dashboard-pied.vercel.app/ (deployed on vercel) 
+
 ## 🚀 Features
 
 - **Interactive Map**: specific geospatial data visualization using [Leaflet](https://leafletjs.com/) and [React Leaflet](https://react-leaflet.js.org/).
